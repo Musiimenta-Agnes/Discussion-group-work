@@ -5,46 +5,46 @@
 
 
 
-# def even():
-#     for numb in range (1,21):
-#          if numb % 2 == 0:
-#             print(f"The even numbers are : \n {numb}")
-# even()
+def even():
+    for numb in range (1,21):
+         if numb % 2 == 0:
+            print(f"The even numbers are : \n {numb}")
+even()
 
 # # #Intermediate: Use a while loop to ask the user to input a number until they provide a number greater than 10.
 
-# while True: # The while True loop runs untill the break statement is encountered.
-#     number = int(input("Enter number that is greater than ten:\n"))
-#     if number > 10:
-#         print("Thank you! Your number has reached")
-#         break
-#     else:
-#         print("Sorry! Please try again")
+while True: # The while True loop runs untill the break statement is encountered.
+    number = int(input("Enter number that is greater than ten:\n"))
+    if number > 10:
+        print("Thank you! Your number has reached")
+        break
+    else:
+        print("Sorry! Please try again")
 
 
 # # #Advanced: Write a program that prints the multiplication table (from 1 to 10) for numbers from 1 to 5 using nested for loops.
 
-# # The outer loop
-# print('The multiplication tabel from 1 to 5')
-# for y in range(1,6):
-#    print(f'Multiplication Table of {y}: ')
+# The outer loop
+print('The multiplication tabel from 1 to 5')
+for y in range(1,6):
+   print(f'Multiplication Table of {y}: ')
 
-#    # The inner loop
-#    for a in range(1,11):
-#         print(f'{y} x {a} = {y * a}')
-#    print()
+   # The inner loop
+   for a in range(1,11):
+        print(f'{y} x {a} = {y * a}')
+   print()
 
 
 
 
 # # #Challenge: Given a list of integers, [4, 7, 2, 9, 12, 15], write a program using a for loop to find the sum of all odd numbers and print the result.
-# list = [4,7,2,9,12,15]
-# odd_sum = 0
+list = [4,7,2,9,12,15]
+odd_sum = 0
 
-# for numbers in list:
-#     if numbers %2 != 0:
-#         odd_sum+=numbers
-# print(f" The sum of the odd numbers is equal to: {sum}")
+for numbers in list:
+    if numbers %2 != 0:
+        odd_sum+=numbers
+print(f" The sum of the odd numbers is equal to: {sum}")
 
 
 
@@ -52,70 +52,70 @@
 # # # -----------------LISTS--------------
 # # #Basic: Create a list of 5 fruits and print each fruit on a new line using a for loop.
 
-# fruits = ['Orange', 'Mango', 'Apple', 'Pineaple', 'Grape']
-# for list in fruits:
-#     print(list)
+fruits = ['Orange', 'Mango', 'Apple', 'Pineaple', 'Grape']
+for list in fruits:
+    print(list)
 
 
 # # #Intermediate: Write a function that takes a list of numbers and returns a new list with each number squared. Example: [1, 2, 3] should become [1, 4, 9].
 
-# def squared_numbers(numbers):
-#     return [n**2 for n in numbers]
-# numbers = [2,3,4]
-# squared_numbers = squared_numbers(numbers)
-# print(squared_numbers)
+def squared_numbers(numbers):
+    return [n**2 for n in numbers]
+numbers = [2,3,4]
+squared_numbers = squared_numbers(numbers)
+print(squared_numbers)
 
 
 
 # # #Advanced: Write a Python program that takes two lists, list1 = [1, 2, 3] and list2 = [4, 5, 6], and combines them into a single list, combined = [1, 4, 2, 5, 3, 6].
 
-# list1 = [1,2,3]
-# list2 = [4,5,6]
-# combined_list = list1 + list2
-# print(combined_list)
+list1 = [1,2,3]
+list2 = [4,5,6]
+combined_list = list1 + list2
+print(combined_list)
 
 
 
 # # #Challenge: Given a list of numbers, [3, 1, 4, 1, 5, 9, 2], write a program to find and print the two largest numbers in the list without using the max() function
-# list = [3,1,4,1,5,9,2]
-# for x in list:
-#     if x >= 5:
-#      print(f" The greatest numbers in the list are: {x}")
+list = [3,1,4,1,5,9,2]
+for x in list:
+    if x >= 5:
+     print(f" The greatest numbers in the list are: {x}")
 
              
 
 
-# # # -------DICTIONARIES--------
+# # -------DICTIONARIES--------
 # # #Basic: Create a dictionary with three key-value pairs representing a student's information: name, age, and grade. Print each key-value pair on a new line.
 
-# student_information = {
-#     'name': 'Musiimenta Agnes',
-#     'age': 21,
-#     'grade': 'Grade A'
-# }
+student_information = {
+    'name': 'Musiimenta Agnes',
+    'age': 21,
+    'grade': 'Grade A'
+}
 
-# name = student_information['name']
-# print(name)
-
-
-# age = student_information['age']
-# print(age)
+name = student_information['name']
+print(name)
 
 
-# grade = student_information['grade']
-# print(grade)
+age = student_information['age']
+print(age)
+
+
+grade = student_information['grade']
+print(grade)
 
 
 # #Intermediate: Write a function that takes a dictionary of people's names and their ages, {'Alice': 24, 'Bob': 19, 'Charlie': 30}, and returns a list of names of people who are 21 or older.
-# def age_and_names(people_data):
-#     people = [names for names, age in people_data.items() if age >= 21]
-#     return people
+def age_and_names(people_data):
+    people = [names for names, age in people_data.items() if age >= 21]
+    return people
 
-# people_data = { "Alice": 24, 
-#                "Bob": 19, 
-#                'Charlie': 30}
-# people = age_and_names(people_data)
-# print( f"The nmes of people with ages above 21 are {people}")
+people_data = { "Alice": 24, 
+               "Bob": 19, 
+               'Charlie': 30}
+people = age_and_names(people_data)
+print( f"The nmes of people with ages above 21 are {people}")
 
 
 
@@ -123,19 +123,19 @@
 
      
 # # #Advanced: Given a dictionary representing items in a store with their prices, {'apple': 0.5, 'banana': 0.3, 'orange': 0.7}, write a program that takes a list of items bought, ['apple', 'orange', 'banana',], and calculates the total cost.
-# prices = {
-#     'apple': 0.5,
-#       'banana': 0.3, 
-#       'orange': 0.7
-# }
-# apple = 0.5
-# banana =  0.3
-# orange =  0.7
-# sum = 0
-# list = [apple, orange, banana]
-# for price in list:
-#     sum += price
-# print(f"The total cost is {sum}")
+prices = {
+    'apple': 0.5,
+      'banana': 0.3, 
+      'orange': 0.7
+}
+apple = 0.5
+banana =  0.3
+orange =  0.7
+sum = 0
+list = [apple, orange, banana]
+for price in list:
+    sum += price
+print(f"The total cost is {sum}")
     
 
 
@@ -151,33 +151,33 @@
 
 # #Basic: Create a class called Car with attributes brand and color. Instantiate an object of the Car class and print its attributes.
 
-# class Car:
-#    def __init__(self,brand,color):
-#       self.brand = brand
-#       self.color = color
+class Car:
+   def __init__(self,brand,color):
+      self.brand = brand
+      self.color = color
 
-#       # Instatinating the object.
-# object = Car('Toyota', 'Red')
-# print(f"Brand: {object.brand}")
-# print(f"Color: {object.color}")
+      # Instatinating the object.
+object = Car('Toyota', 'Red')
+print(f"Brand: {object.brand}")
+print(f"Color: {object.color}")
 
 
    
 
 # #Intermediate: Add a method called start_engine to the Car class that prints a message saying the engine of the car has started. Create an instance of Car and call the method.
 
-# class Car:
-#    def __init__(self,brand,color):
-#       self.brand = brand
-#       self.color = color
+class Car:
+   def __init__(self,brand,color):
+      self.brand = brand
+      self.color = color
 
 
-# def start_engine(self):
-#    print(f"The engine of the car has started")
+def start_engine(self):
+   print(f"The engine of the car has started")
 
-#    # Creating an instance and calling the method
-# cars = Car("Toyota", "Red")   
-# start_engine('self')
+   # Creating an instance and calling the method
+cars = Car("Toyota", "Red")   
+start_engine('self')
 
 
 # # #Advanced: Create a class called BankAccount with attributes account_number and balance. Add methods to:
