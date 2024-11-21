@@ -3,13 +3,8 @@
 # # --------------LOOPS----------
 # # Basic: Write a Python program that prints all even numbers between 1 and 20 using a for loop.
 
-# def even_numbers():
-#     for num in range(2,20,2):
-#         print(num)
-# even_numbers()
 
 
-# # Method 2
 # def even():
 #     for numb in range (1,21):
 #          if numb % 2 == 0:
@@ -82,10 +77,10 @@
 
 
 # # #Challenge: Given a list of numbers, [3, 1, 4, 1, 5, 9, 2], write a program to find and print the two largest numbers in the list without using the max() function
-list = [3,1,4,1,5,9,2]
-for x in list:
-    if x >= 5:
-     print(f" The greatest numbers in the list are: {x}")
+# list = [3,1,4,1,5,9,2]
+# for x in list:
+#     if x >= 5:
+#      print(f" The greatest numbers in the list are: {x}")
 
              
 
@@ -112,13 +107,15 @@ for x in list:
 
 
 # #Intermediate: Write a function that takes a dictionary of people's names and their ages, {'Alice': 24, 'Bob': 19, 'Charlie': 30}, and returns a list of names of people who are 21 or older.
+# def age_and_names(people_data):
+#     people = [names for names, age in people_data.items() if age >= 21]
+#     return people
 
-# # people_data = { "name":"Alice", 'age': 24, 'name':"Bob", 'age': 19, 'name': "Charlie",'age': 30}
-
-
-# # for data in people_data:
-# #     if data["age"] >= 21:
-# #         print(data)
+# people_data = { "Alice": 24, 
+#                "Bob": 19, 
+#                'Charlie': 30}
+# people = age_and_names(people_data)
+# print( f"The nmes of people with ages above 21 are {people}")
 
 
 
@@ -167,48 +164,58 @@ for x in list:
 
    
 
-# # #Intermediate: Add a method called start_engine to the Car class that prints a message saying the engine of the car has started. Create an instance of Car and call the method.
+# #Intermediate: Add a method called start_engine to the Car class that prints a message saying the engine of the car has started. Create an instance of Car and call the method.
+
+# class Car:
+#    def __init__(self,brand,color):
+#       self.brand = brand
+#       self.color = color
+
+
 # def start_engine(self):
 #    print(f"The engine of the car has started")
-# start_engine(Car)
+
+#    # Creating an instance and calling the method
+# cars = Car("Toyota", "Red")   
+# start_engine('self')
 
 
 # # #Advanced: Create a class called BankAccount with attributes account_number and balance. Add methods to:
 # # #Deposit an amount.
 # # #Withdraw an amount (only if sufficient balance exists).
 # # #Print the account balance.
-# class BankAccount:
-#    def __init__(self,account_number,balance):
-#       self.account_number = account_number
-#       self.balance = balance
-#       # Adding a method to deposit an amount
-#       def deposit(self,amount):
-#          self.balance += amount
-#          print(f"Deposit {amount}. New balance is {self.balance}")
-#       deposit(BankAccount)
+class BankAccount:
+   def __init__(self,account_number,balance):
+      self.account_number = account_number
+      self.balance = balance
+      # Adding a method to deposit an amount
+      def deposit(self,amount):
+         self.balance += amount
+         print(f"Deposit {amount}. New balance is {self.balance}")
+      deposit(BankAccount)
 
-#         # Withdrawing an amount.
-#       def withdraw(self,amount):
-#          if amount > self.balance:
-#             print("Insufficient funds!")
-#          else:
-#             self.balance -= amount
-#             print(f"You have withdrawn {amount} and your new balance is {self.balance}")
+        # Withdrawing an amount.
+      def withdraw(self,amount):
+         if amount > self.balance:
+            print("Insufficient funds!")
+         else:
+            self.balance -= amount
+            print(f"You have withdrawn {amount} and your new balance is {self.balance}")
 
 
-#             # Defining the balance
-#       def print_balance(self):
-#          print(f"Account number {self.account_number}, Your account balance is {self.balance}")
+            # Defining the balance
+      def print_balance(self):
+         print(f"Account number {self.account_number}, Your account balance is {self.balance}")
           
-#           # Creating an object to hold the data for the attributes.
-#          account = BankAccount(1003456734,50000)
+          # Creating an object to hold the data for the attributes.
+         account = BankAccount(1003456734,50000)
 
-#          #Deposit
-#          account.deposit(500)
-#          #Withdraw
-#          account.withdraw(200)
-#          #print balance
-#          account.print_balance()
+         #Deposit
+         account.deposit(500)
+         #Withdraw
+         account.withdraw(200)
+         #print balance
+         account.print_balance()
       
       
       
