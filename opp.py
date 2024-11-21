@@ -81,11 +81,11 @@ class BankAccount:
 # # #Check if a book is available by title.
 # # #Borrow a book (mark it as unavailable if it’s available).
 # # #Return a book (mark it as available again if it was borrowed).
-# class Library:
-#    def __init__(self,title,author,availabe_status):
-#       self.title = title
-#       self.author = author
-#       self.available_satus = availabe_status
+class Library:
+   def __init__(self,title,author,availabe_status):
+      self.title = title
+      self.author = author
+      self.available_satus = availabe_status
 
-# # Object
-#       initials = Library('Betrayal', 'Aaiimwe', 'Availabe') 
+# Object
+      initials = Library('Betrayal', 'Aaiimwe', 'Availabe') 
